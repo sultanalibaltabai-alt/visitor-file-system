@@ -1,4 +1,8 @@
 package filesystem;
 
-public class Element {
+public interface Element {
+
+    String getName();
+
+    void accept(Visitor visitor);
 }

@@ -1,4 +1,8 @@
 package filesystem;
 
-public class Visitor {
+public interface Visitor {
+
+    void visit(FileNode file);
+
+    void visit(DirectoryNode directory);
 }
